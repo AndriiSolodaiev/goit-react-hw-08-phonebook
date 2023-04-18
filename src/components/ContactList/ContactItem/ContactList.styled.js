@@ -1,4 +1,3 @@
-import { propNames } from '@chakra-ui/react';
 import styled from 'styled-components';
 
 export const Li = styled.li`

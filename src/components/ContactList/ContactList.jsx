@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import { ContactItem } from './ContactItem';
 import { useSelector } from 'react-redux';
 import { selectVisibleContacts } from 'redux/contacts/selectors';
@@ -13,14 +12,3 @@ export function ContactList() {
     </ul>
   );
 }
-
-// ContactList.propTypes = {
-//   contacts: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     })
-//   ),
-//   removeContact: PropTypes.func.isRequired,
-// };
