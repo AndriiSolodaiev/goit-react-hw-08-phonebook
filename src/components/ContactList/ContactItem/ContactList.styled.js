@@ -1,12 +1,12 @@
+import { propNames } from '@chakra-ui/react';
 import styled from 'styled-components';
 
 export const Li = styled.li`
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 5px 20px;
   margin-bottom: 10px;
   width: 400px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: transform 250ms ease;
@@ -27,4 +27,8 @@ export const DeleteButton = styled.button`
     opacity: 1;
     transform: scale(1.05);
   }
+`;
+
+export const StyledSpan = styled.span`
+  font-weight: ${prop => prop.weight};
 `;

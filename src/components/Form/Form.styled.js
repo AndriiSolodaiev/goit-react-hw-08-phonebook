@@ -34,3 +34,15 @@ export const Input = styled.input`
     border-color: blue;
   }
 `;
+
+export const ButtonAddContacts = styled.button`
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  transition: all 250ms ease;
+  &:hover,
+  :focus {
+    background-color: lightgreen;
+    transform: scale(1.05);
+  }
+`;

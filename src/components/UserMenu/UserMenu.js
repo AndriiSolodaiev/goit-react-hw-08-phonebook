@@ -8,7 +8,7 @@ export const UserMenu = () => {
   const dispatch = useDispatch();
   return (
     <UserMenuWrapper>
-      <p> Welcome, {username.name} </p>
+      <p> Welcome, {username.email} </p>
       <LogOutStyled type="button" onClick={() => dispatch(logOut())}>
         Logout
       </LogOutStyled>

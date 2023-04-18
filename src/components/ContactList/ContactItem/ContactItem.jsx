@@ -1,4 +1,4 @@
-import { Li, DeleteButton } from './ContactList.styled';
+import { Li, DeleteButton, StyledSpan } from './ContactList.styled';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 
@@ -7,7 +7,10 @@ export function ContactItem({ contact }) {
 
   return (
     <Li>
-      {contact.name}: {contact.number}
+      <div>
+        <StyledSpan weight="500">{contact.name}: </StyledSpan>
+        <StyledSpan weight="200">{contact.number}</StyledSpan>
+      </div>
       <DeleteButton
         type="button"
         onClick={() => dispatch(deleteContact(contact.id))}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Label, Input, FormStyled } from './Form.styled';
+import { Label, Input, FormStyled, ButtonAddContacts } from './Form.styled';
 // import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
@@ -68,7 +68,7 @@ export const Form = () => {
           onChange={handleNameChange}
         />
       </Label>
-      <button type="submit">Add contact</button>
+      <ButtonAddContacts type="submit">Add contact</ButtonAddContacts>
     </FormStyled>
   );
 };

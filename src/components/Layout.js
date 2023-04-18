@@ -4,6 +4,8 @@ import { Suspense } from 'react';
 import styled from 'styled-components';
 import img from '../img/pexels-rafael-cosquiere-2064124.jpg';
 import { useAuth } from 'hooks/useAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContainerStyled = styled.div`
   position: relative;
@@ -29,6 +31,7 @@ export const Layout = () => {
           <Outlet />
         </Suspense>
       </ContainerStyled>
+      <ToastContainer autoClose={2500} />
     </div>
   );
 };
