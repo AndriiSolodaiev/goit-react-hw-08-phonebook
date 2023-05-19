@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { accentColor } from 'styles/variables';
 export const HomeLink = styled(NavLink)`
   font-weight: 700;
   margin-right: 35px;
   transition: all 250ms ease;
   &:hover {
-    color: #67c2b6;
+    color: ${accentColor};
   }
 `;
 
