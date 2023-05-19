@@ -19,7 +19,7 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <ContactPageContainer>
       <div>
         <PageTitle>
           Phonebook <AiFillPhone />
@@ -35,7 +35,7 @@ const ContactsPage = () => {
         {isLoading && !error && <p>Loading...</p>}
         <ContactList />
       </ContactListWrapper>
-    </div>
+    </ContactPageContainer>
   );
 };
 
@@ -54,4 +54,9 @@ const ContactListWrapper = styled.div`
   flex-direction: column;
   margin-top: 40px;
   gap: 20px;
+`;
+
+const ContactPageContainer = styled.div`
+  padding-top: 100px;
+  padding-bottom: 50px;
 `;

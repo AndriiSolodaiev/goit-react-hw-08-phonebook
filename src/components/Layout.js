@@ -9,13 +9,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ContainerStyled = styled.div`
   position: relative;
-  padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
   background-image: ${prop => prop.bgimg};
   background-size: cover;
   background-position: center center;

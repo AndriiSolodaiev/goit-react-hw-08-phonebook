@@ -8,11 +8,11 @@ export const HeaderStyled = styled.header`
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba(24, 24, 24, 0.1);
+  background-color: ${prop => prop.bgColor};
+  box-shadow: 0px 5px 25px teal;
 `;
 
 export const NavWrapper = styled.header`
-  max-width: 1440px;
   display: flex;
   justify-content: space-around;
   align-items: center;
