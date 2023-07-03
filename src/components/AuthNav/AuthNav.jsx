@@ -1,4 +1,3 @@
-import { useAuth } from 'hooks/useAuth';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { accentColor } from 'styles/variables';
